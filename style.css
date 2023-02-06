@@ -1,0 +1,49 @@
+body {
+  /* background-image : url('../img/');
+background-repeat :no-repeat; 
+background-attachment: fixed;
+background-size: cover; */
+  background-color: #265396;
+}
+.navBar {
+  border: solid black;
+  height: 10vh;
+  display: flex;
+}
+.leftbar {
+  border: solid red;
+  width: 30%;
+}
+
+.centerbar {
+  border: solid yellow;
+  width: 40%;
+}
+.rightbar {
+  border: solid green;
+  width: 30%;
+}
+.disneyBox {
+  border: solid purple;
+  height: 65vh;
+}
+.pixarBox {
+  border: solid gold;
+  height: 65vh;
+}
+.marvelBox {
+  border: solid teal;
+  height: 65vh;
+}
+.disneyChar {
+  width: 100%;
+  object-fit: scale-down;
+}
+.pixarChar {
+  width: 100%;
+  object-fit: scale-down;
+}
+.marvelChar {
+  width: 100%;
+  object-fit: scale-down;
+}
