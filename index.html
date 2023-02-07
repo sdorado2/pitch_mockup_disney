@@ -17,62 +17,73 @@
     </div>
     <!-- mainBody -->
     <h1 class="greeting">Dreams Come True!</h1>
+    <!-- carousel -->
+    <div class="carouselImg">
+      <div class="carouselContainer">
+        <div class="imgRotate">
+          
+          <div class="counter fade">1</div>
+          <img src="img/img1.jpg" alt="image" class="ads"/>
+          <div class="info">Disney</div>
+        </div>
+
+        <div class="imgRotate fade">
+          <div class="counter">2</div>
+          <img src="img/img2.jpg" alt="image" class="ads"/>
+          <div class="info">Pixar</div>
+        </div>
+
+        <div class="imgRotate fade">
+          <div class="counter">3</div>
+          <img src="img/img3.jpg" alt="image" class="ads"/>
+          <div class="info">Marvel</div>
+        </div>
+
+        <div class="imgRotate fade">
+          <div class="counter">4</div>
+          <img src="img/img4.jpg" alt="image" class="ads"/>
+          <div class="info">Disney Plus</div>
+        </div>
+
+        <a class="prev" onclick="addSlides(-1)">&#10094;</a>
+        <a class="next" onclick="addSlides(1)">&#10095;</a>
+      </div>
+    </div>
+
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+
     <!-- Disney Characters  -->
     <div class="mainBox">
-      <div class="carouselImg">
-        <div class="carouselContainer">
-          <div class="imgRotate">
-            
-            <div class="counter">1</div>
-            <img src="img/img1.jpg" alt="image" class="Ads"/>
-            <div class="info">Disney</div>
-          </div>
-
-          <div class="imgRotate">
-            <div class="counter">2</div>
-            <img src="img/img2.jpg" alt="image" class="Ads"/>
-            <div class="info">Pixar</div>
-          </div>
-
-          <div class="imgRotate">
-            <div class="counter">3</div>
-            <img src="img/img3.jpg" alt="image" class="Ads"/>
-            <div class="info">Marvel</div>
-          </div>
-
-          <div class="imgRotate">
-            <div class="counter">4</div>
-            <img src="img/img4.jpg" alt="image" class="Ads"/>
-            <div class="info">Disney Plus</div>
-          </div>
-
-          <a class="prev" onclick="addSlides(-1)">&#10094;</a>
-          <a class="next" onclick="addSlides(1)">&#10095;</a>
-        </div>
-      </div>
-
-      <div style="text-align: center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-      </div>
 
       <div class="disneyBox">
         <img src="img/disneychar.jpg" alt="" class="disneyChar" />
+        <h3 class="subtitle">title head</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores unde, vitae quasi est quas maxime suscipit adipisci illo repellat quae expedita illum non? Fuga, exercitationem!</p>
       </div>
       <!-- Pixar Characters   -->
       <div class="pixarBox">
         <img src="img/pixarchar.jpg" alt="" class="pixarChar" />
+        <h3 class="subtitle">title head</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores unde, vitae quasi est quas maxime suscipit adipisci illo repellat quae expedita illum non? Fuga, exercitationem!</p>
       </div>
       <!-- Marvel Characters  -->
       <div class="marvelBox">
         <img src="img/marvelchar_rs.png" alt="" class="marvelChar" />
+        <h3 class="subtitle">title head</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores unde, vitae quasi est quas maxime suscipit adipisci illo repellat quae expedita illum non? Fuga, exercitationem!</p>
       </div>
       <div class="disneyPlus">
         <img src="img/Disney-Plus-Logo.png" alt="" class="stream" />
+        <h3 class="subtitle">title head</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores unde, vitae quasi est quas maxime suscipit adipisci illo repellat quae expedita illum non? Fuga, exercitationem!</p>
       </div>
     </div>
 
-    <script src=""></script>
+    <script src="app.js"></script>
   </body>
 </html>

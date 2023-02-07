@@ -16,7 +16,6 @@ background-size: cover; */
   border: solid red;
   width: 30%;
 }
-
 .centerbar {
   border: solid yellow;
   width: 40%;
@@ -25,33 +24,34 @@ background-size: cover; */
   border: solid green;
   width: 30%;
 }
-.mainBox{
-  border :solid brown;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  width: 65%;
-  height: 150vh;
-  margin: 0 20% 0 20%;
+
+* {
+  box-sizing: border-box;
 }
 
-.carouselContainer{
-  max-width: 100%;
+.carouselImg {
+  border: solid black;
+  height: 50vh;
+}
+.carouselContainer {
+  border: solid wheat;
+  max-width: 50vw;
+  height: 30vh;
   position: absolute;
   margin: auto;
 }
-.imgRotate{
+.imgRotate {
   display: none;
 }
-.ads{
+.ads {
   width: 100%;
 }
-.prev, .next {
+.prev {
   cursor: pointer;
   position: absolute;
   top: 50%;
   width: auto;
-  margin-top: -22px;
+  margin-top: 6em;
   padding: 16px;
   color: white;
   font-weight: bold;
@@ -61,11 +61,24 @@ background-size: cover; */
   user-select: none;
 }
 .next {
-  right: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: 6em;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  left: 75em;
   border-radius: 3px 0 0 3px;
 }
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 .info {
   color: white;
@@ -77,6 +90,7 @@ background-size: cover; */
   text-align: center;
 }
 .counter {
+  border: solid red;
   color: #f2f2f2;
   font-size: 12px;
   padding: 8px 12px;
@@ -93,7 +107,8 @@ background-size: cover; */
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: #717171;
 }
 .fade {
@@ -101,7 +116,15 @@ background-size: cover; */
   animation-duration: 1.5s;
 }
 
-
+.mainBox {
+  border: solid brown;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 65%;
+  height: 150vh;
+  margin: 0 20% 0 20%;
+}
 .disneyBox {
   border: solid purple;
   width: 40%;
@@ -117,7 +140,7 @@ background-size: cover; */
   width: 40%;
   height: 65vh;
 }
-.disneyPlus{
+.disneyPlus {
   border: solid skyblue;
   width: 40%;
   height: 65vh;
@@ -134,6 +157,6 @@ background-size: cover; */
   width: 100%;
   /* object-fit: scale-down; */
 }
-.stream{
+.stream {
   width: 100%;
 }

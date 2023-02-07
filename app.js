@@ -1,25 +1,24 @@
 let slideIndex = 1;
-showSlide(SlideIndex);
 
-addSlides = (counter) => {
+const addSlides = (counter) => {
   showSlides((slideIndex += counter));
 };
 
-currentSlide = (counter) => {
+const currentSlide = (counter) => {
   showSlides((slideIndex = counter));
 };
 
-showSlide = (counter) => {
+const showSlides = (counter) => {
   let slide = document.getElementByClassName("counter");
   let dots = document.getElementByClassName("dot");
 
   if (counter > slide.lenght) {
     slideIndex = 1;
-  }
+  } 
   if (counter < 1) {
-    slideIndex = slides.length;
+    slideIndex = slide.length;
   }
-  for (digit = 0; digit < slides.length; digit++) {
+  for (digit = 0; digit < slide.length; digit++) {
     slide[digit].style.display = "none";
   }
 
@@ -30,3 +29,5 @@ showSlide = (counter) => {
   slide[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].style.display += "active";
 };
+
+showSlides(slideIndex);
