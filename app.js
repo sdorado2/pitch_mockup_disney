@@ -9,12 +9,17 @@ const currentSlide = (counter) => {
 };
 
 const showSlides = (counter) => {
-  let slide = document.getElementByClassName("counter");
-  let dots = document.getElementByClassName("dot");
+  let slide = document.getElementsByClassName("imgSlide");
+  let dots = document.getElementsByClassName("dot");
 
-  if (counter > slide.lenght) {
+  // counter > slide.lenght ? slideIndex = 1: ;
+
+  // counter <1 ? slideIndex = slide.length:;
+  
+  if (counter > slide.length) {
     slideIndex = 1;
   } 
+
   if (counter < 1) {
     slideIndex = slide.length;
   }
@@ -23,7 +28,7 @@ const showSlides = (counter) => {
   }
 
   for (digit = 0; digit < dots.length; digit++) {
-    dots[digit].classman = dots[digit].className.replace("active");
+    dots[digit].classman = dots[digit].className.replace("active","");
   }
 
   slide[slideIndex - 1].style.display = "block";
