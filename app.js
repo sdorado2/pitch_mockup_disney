@@ -11,10 +11,6 @@ const currentSlide = (counter) => {
 const showSlides = (counter) => {
   let slide = document.getElementsByClassName("imgSlide");
   let dots = document.getElementsByClassName("dot");
-
-  // counter > slide.lenght ? slideIndex = 1: ;
-
-  // counter <1 ? slideIndex = slide.length:;
   
   if (counter > slide.length) {
     slideIndex = 1;

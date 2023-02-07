@@ -6,23 +6,56 @@ background-size: cover; */
   background-color: #265396;
 }
 .navBar {
-  border: solid black;
+  border: solid navy;
+  border-left: none;
+  border-right: none;
   width: 65%;
   height: 10vh;
   margin: auto;
   display: flex;
 }
 .leftbar {
-  border: solid red;
+  /* border: solid red; */
+  display: flex;
   width: 30%;
 }
+.logo,
+.store,
+.about {
+  border-radius: 50px;
+  width: 20%;
+  margin: auto;
+  object-position: center;
+  justify-content: space-evenly;
+}
+.logo:hover,
+.store:hover,
+.about:hover {
+  background-color: white;
+}
 .centerbar {
-  border: solid yellow;
+  /* border: solid yellow; */
   width: 40%;
 }
 .rightbar {
-  border: solid green;
+  /* border: solid green; */
+  display: flex;
   width: 30%;
+}
+.account,
+.help{
+  border-radius: 50px;
+  width: 20%;
+  margin: auto;
+  object-position: center;
+  justify-content: space-evenly;
+}
+.account:hover,
+.help:hover{
+  background-color: white;
+}
+.icon {
+  width: 100%;
 }
 
 * {
@@ -40,7 +73,7 @@ background-size: cover; */
   position: absolute;
   margin: auto;
 }
-.imgRotate {
+.imgSlide {
   display: none;
 }
 .ads {
@@ -91,8 +124,8 @@ background-size: cover; */
   text-align: center;
 }
 .counter {
-  border: solid red;
-  color: #f2f2f2;
+  border: solid black;
+  color: white;
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
@@ -110,7 +143,7 @@ background-size: cover; */
 }
 .active,
 .dot:hover {
-  background-color: #717171;
+  background-color: gray;
 }
 .fade {
   animation-name: fade;
