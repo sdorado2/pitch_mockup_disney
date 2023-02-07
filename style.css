@@ -7,7 +7,9 @@ background-size: cover; */
 }
 .navBar {
   border: solid black;
+  width: 65%;
   height: 10vh;
+  margin: auto;
   display: flex;
 }
 .leftbar {
@@ -23,27 +25,115 @@ background-size: cover; */
   border: solid green;
   width: 30%;
 }
+.mainBox{
+  border :solid brown;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 65%;
+  height: 150vh;
+  margin: 0 20% 0 20%;
+}
+
+.carouselContainer{
+  max-width: 100%;
+  position: absolute;
+  margin: auto;
+}
+.imgRotate{
+  display: none;
+}
+.ads{
+  width: 100%;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.info {
+  color: white;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.counter {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+
 .disneyBox {
   border: solid purple;
+  width: 40%;
   height: 65vh;
 }
 .pixarBox {
   border: solid gold;
+  width: 40%;
   height: 65vh;
 }
 .marvelBox {
   border: solid teal;
+  width: 40%;
+  height: 65vh;
+}
+.disneyPlus{
+  border: solid skyblue;
+  width: 40%;
   height: 65vh;
 }
 .disneyChar {
   width: 100%;
-  object-fit: scale-down;
+  /* object-fit: scale-down; */
 }
 .pixarChar {
   width: 100%;
-  object-fit: scale-down;
+  /* object-fit: scale-down; */
 }
 .marvelChar {
   width: 100%;
-  object-fit: scale-down;
+  /* object-fit: scale-down; */
+}
+.stream{
+  width: 100%;
 }
